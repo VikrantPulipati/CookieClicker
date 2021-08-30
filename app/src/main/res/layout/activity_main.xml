@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/id_cookie"
+        android:layout_width="240dp"
+        android:layout_height="236dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/id_cookieCount"
+        android:layout_width="217dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="88dp"
+        android:gravity="center"
+        android:text="0 Cookies"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_cookie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/id_grandmaDetails"
+        android:layout_width="181dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="144dp"
+        android:gravity="center"
+        android:text="Cost: 30 Cookies\n+1 Cookies Per Second"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/id_grandma"
+        app:layout_constraintTop_toBottomOf="@+id/id_cookie" />
+
+    <TextView
+        android:id="@+id/id_cursorDetails"
+        android:layout_width="181dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Cost: 10 Cookies\n+1 Cookies Per Click"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/id_grandma"
+        app:layout_constraintTop_toBottomOf="@+id/id_cookie" />
+
+    <ImageView
+        android:id="@+id/id_cursor"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="12dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/id_cookie"
+        app:layout_constraintTop_toBottomOf="@+id/id_cookie"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/id_grandma"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="124dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/id_cookie"
+        app:layout_constraintTop_toBottomOf="@+id/id_cookie"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/id_cookiesPerClick"
+        android:layout_width="157dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="1 Cookies Per Click"
+        app:layout_constraintBottom_toTopOf="@+id/id_cookie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_cookieCount"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <TextView
+        android:id="@+id/id_cookiesPerSecond"
+        android:layout_width="157dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="0 Cookies Per Second"
+        app:layout_constraintBottom_toTopOf="@+id/id_cookie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_cookieCount"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
